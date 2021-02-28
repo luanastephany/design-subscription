@@ -2,16 +2,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Karla, sans-serif;
+}
+
+body{
+  background-color: #E6EFF6;
 }
 
 #root{  
-  height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #E6EFF6;
 }
 
 .content{
@@ -28,8 +32,27 @@
   flex-direction: column;
   padding: 20px;
   width: 100%;
-  height: 200px;
   background-color: white;
+}
+
+/* TÍTULO DE JOIN */
+h2{ 
+  color: #509F9F;
+  margin-bottom: 15px;
+}
+
+/* SUBTÍULO 30-day*/
+#day{
+  color: #D5EB64;
+  margin: 16px 0;
+}
+
+/* DESCRIÇÃO DO PRIMEIRO QUADRO */
+.description{
+  color: #b3b7bd;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 28px;
 }
 
 .bottom{
@@ -40,23 +63,76 @@
 
 .left{
   display: flex;
-  height: 200px;
+  flex-direction: column;
   width: 100%;
   background-color: #2BB3B1;
+  padding: 20px;
+}
+
+/*Monthy subscription e Why Us*/
+.subtitle{
+  color: white;
+  margin-bottom: 12px;
+}
+
+/*PRICE */
+h1{
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+/*ESCRITA "Per Month" */
+#month{
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 200;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* ESCRITA DO "Full acess" */
+.access{
+  color: white;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+/* BOTÃO SIGN UP */
+.btn{
+  color: white;
+  background-color: #BFDF32;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
 }
 
 .right{
   display: flex;
-  height: 200px;
+  flex-direction: column;
   width: 100%;
   background-color: #4ABEBD;
+  padding: 20px;
 }
 
+/*LISTA DO "Why Us" */
+.list{
+  color: white;
+  font-size: 14px;
+  margin-top: 6px;
+}
 
+footer{
+  margin-top: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
 
-
-
-
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 @media only screen and (min-width: 640px) {
   .content{
